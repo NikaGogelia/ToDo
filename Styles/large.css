@@ -1,0 +1,110 @@
+@media only screen and (min-width: 1024px) {
+  .head {
+    padding: 3% 20% 1%;
+  }
+
+  .to-do {
+    padding: 0 20%;
+  }
+
+  .dark-to-do:nth-child(1),
+  .light-to-do:nth-child(1) {
+    margin-bottom: 1.5em;
+  }
+
+  .add-task {
+    height: 3.5em;
+  }
+
+  .add-task > input {
+    width: 80%;
+    height: 100%;
+    margin-left: 1em;
+  }
+
+  .delete {
+    margin-left: 1em;
+  }
+
+  .dark-list,
+  .light-list {
+    height: 25em;
+  }
+
+  .task-div {
+    padding: 1em 1em 0;
+  }
+
+  .task {
+    margin-left: 0.3em;
+    width: 85%;
+    overflow-wrap: break-word;
+  }
+
+  .controls {
+    height: 3.1875em;
+  }
+
+  .controls > p {
+    padding: 1em;
+    margin: 0;
+    font-size: 0.9em;
+  }
+
+  .controls > p:nth-child(1) {
+    flex: 60%;
+    text-align: start;
+  }
+
+  .controls > p:nth-child(5) {
+    flex: 60%;
+    text-align: end;
+  }
+
+  .controls > p:nth-child(2),
+  .controls > p:nth-child(3),
+  .controls > p:nth-child(4) {
+    flex: 20%;
+  }
+
+  @media only screen and (min-height: 850px) {
+    .dark-list,
+    .light-list {
+      height: 35rem;
+    }
+    .to-do-div {
+      height: 93%;
+    }
+  }
+
+  @media only screen and (min-height: 1000px) {
+    .dark-list,
+    .light-list {
+      height: 45rem;
+    }
+  }
+
+  @media only screen and (max-width: 1191px) {
+    .add-task > input {
+      width: 75%;
+    }
+
+    .task {
+      width: 80%;
+    }
+
+    .to-do {
+      padding: 0 18%;
+    }
+
+    .head {
+      padding: 3% 18% 1%;
+    }
+  }
+
+  @media only screen and (max-width: 1026px) {
+    .controls > p {
+      font-size: 0.85em;
+    }
+  }
+}

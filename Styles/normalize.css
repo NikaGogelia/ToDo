@@ -1,0 +1,655 @@
+/* Normalize Styles */
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+/* End Of Normalize Styles */
+
+/* Page Styles For Every Screen Size */
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#dark {
+  background-color: hsl(235, 21%, 11%);
+  color: hsl(236, 33%, 92%);
+}
+
+#light {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(235, 19%, 35%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  letter-spacing: 0.4em;
+}
+
+p {
+  font-weight: 400;
+}
+
+.header {
+  text-transform: uppercase;
+  color: hsl(0, 0%, 98%);
+}
+
+.head .col-6 {
+  padding: 0;
+}
+
+.background-image-dark,
+.background-image-light {
+  position: absolute;
+  filter: blur(0.7px);
+  top: 0;
+  width: 100%;
+  height: 15em;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.background-image-dark {
+  background-image: url("images/dark-background-image.jpg");
+  box-shadow: 0px 0px 10px 1px hsl(234, 23%, 9%);
+}
+
+.background-image-light {
+  background-image: url("images/light-background-image.jpg");
+  box-shadow: 0px 0px 7px 1px hsl(236, 9%, 61%);
+}
+
+.btn-back-change {
+  text-align: end;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.btn-back-change > button {
+  color: hsl(236, 33%, 92%);
+  opacity: 0.85;
+}
+
+#dark .task-div > button {
+  color: hsl(233, 14%, 35%);
+}
+
+#light .task-div > button {
+  color: hsl(235, 19%, 35%);
+}
+
+.btn-back-change:hover button > i {
+  transition: 0.4s;
+  transform: scale(1.1);
+  opacity: 1;
+  color: hsl(0, 0%, 98%);
+}
+
+.container {
+  max-width: 80%;
+}
+
+.dark-to-do {
+  background-color: hsl(235, 24%, 19%);
+  border-radius: 0.25em;
+  box-shadow: 0 0 7px 1px hsl(235, 21%, 11%);
+  border: none;
+  position: relative;
+}
+
+.light-to-do {
+  background-color: hsl(0, 0%, 98%);
+  border-radius: 0.3em;
+  box-shadow: 0 0 5px 1px hsl(236, 9%, 61%);
+  border: none;
+  position: relative;
+}
+
+.add-task > input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+#dark input:-webkit-autofill,
+#dark input:-webkit-autofill:hover,
+#dark input:-webkit-autofill:focus,
+#dark input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px hsl(235, 24%, 19%) inset !important;
+}
+
+#light input:-webkit-autofill,
+#light input:-webkit-autofill:hover,
+#light input:-webkit-autofill:focus,
+#light input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px hsl(0, 0%, 98%) inset !important;
+}
+
+#dark input:-webkit-autofill {
+  -webkit-text-fill-color: hsl(0, 0%, 98%) !important;
+}
+
+#light input:-webkit-autofill {
+  -webkit-text-fill-color: hsl(235, 19%, 35%) !important;
+}
+
+#dark .add-task > button {
+  color: hsl(236, 9%, 61%);
+}
+
+#light .add-task > button {
+  color: hsl(236, 9%, 61%);
+}
+
+#dark .add-task > button > i.fa-plus:hover {
+  transition: 1s;
+  color: hsl(233, 11%, 84%);
+}
+
+#light .add-task > button > i.fa-plus:hover {
+  transition: 1s;
+  color: hsl(235, 19%, 35%);
+}
+
+#dark .add-task > input {
+  color: hsl(0, 0%, 98%);
+}
+
+#light .add-task > input {
+  color: hsl(235, 19%, 35%);
+}
+
+.add-task > input::placeholder {
+  text-transform: capitalize;
+  color: hsl(236, 9%, 61%);
+}
+
+.fa-xmark {
+  overflow: hidden;
+  opacity: 0;
+}
+
+.task-div:hover .fa-xmark,
+.add-task:hover .fa-xmark {
+  transition: 0.5s;
+  opacity: 1;
+  overflow: visible;
+}
+
+.add-task input:focus button > i.fa-xmark {
+  overflow: visible;
+}
+
+.dark-list,
+.light-list {
+  padding: 0;
+}
+
+.to-do-div {
+  overflow: auto;
+  height: 87%;
+}
+
+#dark ::-webkit-scrollbar,
+#light ::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+#dark ::-webkit-scrollbar-track,
+#light ::-webkit-scrollbar-track {
+  border-radius: 0.3em;
+}
+
+#dark ::-webkit-scrollbar-track {
+  background-color: hsl(237, 14%, 26%);
+}
+
+#light ::-webkit-scrollbar-track {
+  background-color: hsl(233, 11%, 84%);
+}
+
+#dark ::-webkit-scrollbar-thumb,
+#light ::-webkit-scrollbar-thumb {
+  border-radius: 0.3em;
+}
+
+#dark ::-webkit-scrollbar-thumb {
+  background: hsl(231, 14%, 39%);
+}
+
+#light ::-webkit-scrollbar-thumb {
+  background: hsl(235, 19%, 35%);
+}
+
+#dark ::-webkit-scrollbar-thumb:hover {
+  background: hsl(234, 11%, 52%);
+}
+
+#light ::-webkit-scrollbar-thumb:hover {
+  background: hsl(236, 18%, 50%);
+}
+
+.dark-list .task-div {
+  border-bottom: 1px solid hsl(237, 14%, 26%);
+}
+
+.light-list .task-div {
+  border-bottom: 1px solid hsl(233, 11%, 84%);
+}
+
+.checkbox {
+  vertical-align: middle;
+  width: 1.3em;
+  height: 1.3em;
+  background-color: transparent;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 0.35em;
+}
+
+#dark .checkbox {
+  border-color: hsl(233, 14%, 35%);
+}
+
+#light .checkbox {
+  border-color: hsl(233, 8%, 78%);
+}
+
+.checkbox:hover {
+  transition: 0.3s;
+  border-color: hsl(192, 100%, 67%);
+}
+
+.checkbox:checked {
+  background: rgb(87, 221, 255);
+  background: -moz-linear-gradient(
+    137deg,
+    rgba(87, 221, 255, 1) 0%,
+    rgba(192, 88, 243, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    137deg,
+    rgba(87, 221, 255, 1) 0%,
+    rgba(192, 88, 243, 1) 100%
+  );
+  background: linear-gradient(
+    137deg,
+    rgba(87, 221, 255, 1) 0%,
+    rgba(192, 88, 243, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#57ddff", endColorstr="#c058f3", GradientType=1);
+}
+
+.checked-text {
+  color: hsl(236, 9%, 61%);
+  -webkit-text-decoration-line: line-through;
+  text-decoration-line: line-through;
+}
+
+.checkmark:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  visibility: hidden;
+}
+
+.container input:checked ~ .checkmark:after {
+  visibility: visible;
+}
+
+.container .checkmark:after {
+  z-index: 2;
+  right: 1.073em;
+  bottom: 0.15em;
+  width: 5px;
+  height: 9px;
+  border: solid hsl(0, 0%, 98%);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.task-div > p {
+  display: inline-block;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  float: inline-end;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 13%;
+}
+
+#dark .controls {
+  border-top: 1px solid hsl(237, 14%, 26%);
+}
+
+#light .controls {
+  border-top: 1px solid hsl(233, 11%, 84%);
+}
+
+.controls > p {
+  text-align: center;
+}
+
+#dark .controls > p {
+  color: hsl(234, 11%, 52%);
+}
+
+#light .controls > p {
+  color: hsl(236, 9%, 61%);
+}
+
+#dark .controls > p:nth-child(2):hover,
+#dark .controls > p:nth-child(3):hover,
+#dark .controls > p:nth-child(4):hover,
+#dark .controls > p:nth-child(5):hover {
+  color: hsl(0, 0%, 98%);
+  cursor: pointer;
+}
+
+#light .controls > p:nth-child(2):hover,
+#light .controls > p:nth-child(3):hover,
+#light .controls > p:nth-child(4):hover,
+#light .controls > p:nth-child(5):hover {
+  color: hsl(235, 19%, 35%);
+  cursor: pointer;
+}
+
+.controls > p.active-item {
+  border-bottom: 2px solid hsl(192, 100%, 67%);
+}
+
+.remove-task {
+  display: none;
+}
+
+/* Loader */
+
+#Div {
+  display: none;
+}
+
+.animate-content {
+  position: relative;
+  animation: animateDiv 1.6s;
+}
+
+@keyframes animateDiv {
+  from {
+    bottom: -10em;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.loader {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#dark .loader {
+  background-color: hsl(235, 24%, 19%);
+}
+
+#light .loader {
+  background-color: hsl(236, 33%, 92%);
+}
+
+.spinner {
+  display: flex;
+  gap: 0.5em;
+}
+
+#dark .spinner span {
+  box-shadow: 10px 0 10px 0px hsl(235, 21%, 11%);
+}
+
+#light .spinner span {
+  box-shadow: 6px 0 6px -2px hsl(235, 19%, 35%);
+}
+
+.spinner span {
+  background: hsl(192, 100%, 67%);
+  width: 0.45em;
+  height: 2em;
+  animation: grow 1s ease-in-out infinite;
+  border-radius: 15%;
+  border: none;
+}
+
+.spinner span:nth-child(2) {
+  animation: grow 1s ease-in-out 0.15s infinite;
+}
+
+.spinner span:nth-child(3) {
+  animation: grow 1s ease-in-out 0.3s infinite;
+}
+
+.spinner span:nth-child(4) {
+  animation: grow 1s ease-in-out 0.475s infinite;
+}
+
+@keyframes grow {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(2.3);
+  }
+}
+
+/*End OF Page Styles For Every Screen Size */

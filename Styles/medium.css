@@ -1,0 +1,149 @@
+@media only screen and (min-width: 425px) {
+  .head {
+    padding: 3% 15% 1%;
+  }
+
+  .to-do {
+    padding: 0 15%;
+  }
+
+  .dark-to-do:nth-child(1),
+  .light-to-do:nth-child(1) {
+    margin-bottom: 1.5em;
+  }
+
+  .add-task {
+    height: 3.5em;
+  }
+
+  .add-task > input {
+    width: 80%;
+    height: 100%;
+    margin-left: 1em;
+  }
+
+  .delete {
+    margin-left: 1em;
+  }
+
+  .dark-list,
+  .light-list {
+    height: 25em;
+  }
+
+  .task-div {
+    padding: 1em 1em 0;
+  }
+
+  .task {
+    margin-left: 0.3em;
+    width: 85%;
+    overflow-wrap: break-word;
+  }
+
+  .controls {
+    height: 3.1875em;
+  }
+
+  .controls > p {
+    padding: 1em;
+    margin: 0;
+    font-size: 0.8em;
+  }
+
+  .controls > p:nth-child(1) {
+    flex: 60%;
+    text-align: start;
+  }
+
+  .controls > p:nth-child(5) {
+    flex: 60%;
+    text-align: end;
+  }
+
+  .controls > p:nth-child(2),
+  .controls > p:nth-child(3),
+  .controls > p:nth-child(4) {
+    flex: 20%;
+  }
+
+  @media only screen and (min-height: 850px) {
+    .dark-list,
+    .light-list {
+      height: 35rem;
+    }
+
+    .to-do-div {
+      height: 93%;
+    }
+  }
+
+  @media only screen and (min-height: 1000px) {
+    .dark-list,
+    .light-list {
+      height: 45rem;
+    }
+  }
+
+  @media only screen and (max-width: 953px) {
+    .add-task > input {
+      width: 75%;
+    }
+
+    .task {
+      width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 953px) {
+    .head {
+      padding: 3% 10% 1%;
+    }
+
+    .to-do {
+      padding: 0 10%;
+    }
+
+    .add-task > input {
+      width: 70%;
+    }
+
+    .task {
+      width: 75%;
+    }
+
+    .controls > p {
+      font-size: 0.75em;
+      padding-top: 1.4em;
+    }
+  }
+
+  @media only screen and (max-width: 660px) {
+    .head {
+      padding: 3% 8% 1%;
+    }
+
+    .to-do {
+      padding: 0 8%;
+    }
+
+    .add-task > input {
+      width: 65%;
+    }
+
+    .controls > p {
+      font-size: 0.7em;
+      padding-top: 1.7em;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .head {
+      padding: 3% 5% 1%;
+    }
+
+    .to-do {
+      padding: 0 5%;
+    }
+  }
+}

@@ -1,0 +1,133 @@
+@media only screen and (min-width: 0px) {
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+
+  .head {
+    padding: 3% 5% 1%;
+  }
+
+  .to-do {
+    padding: 0 5%;
+  }
+
+  .dark-to-do:nth-child(1),
+  .light-to-do:nth-child(1) {
+    margin-bottom: 1.5em;
+  }
+
+  .add-task {
+    height: 3.5em;
+  }
+
+  .add-task > input {
+    width: 65%;
+    height: 100%;
+    margin-left: 1em;
+  }
+
+  .delete {
+    margin-left: 1em;
+  }
+
+  .dark-list,
+  .light-list {
+    height: 25em;
+  }
+
+  .task-div {
+    padding: 1em 1em 0;
+  }
+
+  .task {
+    margin-left: 0.3em;
+    width: 70%;
+    overflow-wrap: break-word;
+  }
+
+  .controls {
+    height: 3.1875em;
+  }
+
+  .controls > p {
+    padding: 1.7em 1em 1em 1em;
+    margin: 0;
+    font-size: 0.65em;
+  }
+
+  .controls > p:nth-child(1) {
+    flex: 60%;
+    text-align: start;
+  }
+
+  .controls > p:nth-child(5) {
+    flex: 60%;
+    text-align: end;
+  }
+
+  .controls > p:nth-child(2),
+  .controls > p:nth-child(3),
+  .controls > p:nth-child(4) {
+    flex: 20%;
+  }
+
+  @media only screen and (max-width: 400px) {
+    .head {
+      padding: 3% 4% 1%;
+    }
+
+    .to-do {
+      padding: 0 4%;
+    }
+
+    .controls > p {
+      font-size: 0.61em;
+    }
+
+    .add-task > input {
+      width: 62%;
+    }
+
+    .task {
+      width: 68%;
+    }
+  }
+
+  @media only screen and (max-width: 360px) {
+    .controls > p {
+      font-size: 0.5em;
+      padding-top: 2.5em;
+    }
+
+    .add-task > input {
+      width: 55%;
+      font-size: 0.8em;
+    }
+
+    .task {
+      width: 60%;
+      font-size: 0.8em;
+    }
+  }
+
+  @media only screen and (min-height: 660px) {
+    .dark-list,
+    .light-list {
+      height: 28rem;
+    }
+  }
+
+  @media only screen and (min-height: 760px) {
+    .dark-list,
+    .light-list {
+      height: 33rem;
+    }
+  }
+}
